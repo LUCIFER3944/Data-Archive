@@ -17,8 +17,8 @@
             </div>
             <div class="nav-menu" id="navMenu">
                 <ul>
-                    <li><a href="#" class="link active">Home</a></li>
-                    <li><a href="#" class="link">Books</a></li>
+                    <li><a href="main.php" class="link active">Home</a></li>
+                    <li><a href="#" class="link">Profile</a></li>
                     <li><a href="#" class="link">Services</a></li>
                     <li><a href="#" class="link">About</a></li>
                 </ul>

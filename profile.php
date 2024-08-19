@@ -30,6 +30,7 @@
         }
         .info-label {
             font-weight: bold;
+            font-size: 15px;
         }
         .btn-custom {
             padding: 10px 20px;
@@ -47,6 +48,9 @@
             height: 100vh;
             margin-top: 170px;
         }
+        .text{
+            font-size: 15px ;
+        }
     </style>
 </head>
 <body>
@@ -61,9 +65,9 @@
             <div class="card profile-card mb-4">
                 <div class="card-body text-center">
                     <img src="images/ava3.webp" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
-                    <h5 class="my-3">John Smith</h5>
-                    <p class="text-muted mb-1">Full Stack Developer</p>
-                    <p class="text-muted mb-4">Bay Area, San Francisco, CA</p>
+                    <h5 class="my-4">John Smith</h5>
+                    <p class="text mb-1">Full Stack Developer</p>
+                    <p class="text mb-4">Bay Area, San Francisco, CA</p>
                     <div class="d-flex justify-content-center mb-4">
                         <button type="button" class="btn btn-primary btn-custom">Follow</button>
                         <button type="button" class="btn btn-outline-primary btn-custom ms-2">Message</button>
@@ -77,31 +81,31 @@
                     <div class="row info-row">
                         <div class="col-sm-3 info-label">Full Name</div>
                         <div class="col-sm-9">
-                            <p class="text-muted">Johnatan Smith</p>
+                            <p class="text">Johnatan Smith</p>
                         </div>
                     </div>
                     <div class="row info-row">
                         <div class="col-sm-3 info-label">Email</div>
                         <div class="col-sm-9">
-                            <p class="text-muted">example@example.com</p>
+                            <p class="text">example@example.com</p>
                         </div>
                     </div>
                     <div class="row info-row">
                         <div class="col-sm-3 info-label">Phone</div>
                         <div class="col-sm-9">
-                            <p class="text-muted">(097) 234-5678</p>
+                            <p class="text">(097) 234-5678</p>
                         </div>
                     </div>
                     <div class="row info-row">
                         <div class="col-sm-3 info-label">Mobile</div>
                         <div class="col-sm-9">
-                            <p class="text-muted">(098) 765-4321</p>
+                            <p class="text">(098) 765-4321</p>
                         </div>
                     </div>
                     <div class="row info-row">
                         <div class="col-sm-3 info-label">Address</div>
                         <div class="col-sm-9">
-                            <p class="text-muted">Bay Area, San Francisco, CA</p>
+                            <p class="text">Bay Area, San Francisco, CA</p>
                         </div>
                     </div>
                 </div>
