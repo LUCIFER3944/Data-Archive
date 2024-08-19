@@ -8,7 +8,7 @@
 </head>
 <body>
 <header>
-        <a href="#" class="logo">Alex</a>
+        <a href="#" class="logo">Lucifer</a>
 
         <nav>
             <a href="main.php" class="active"> Home</a>
