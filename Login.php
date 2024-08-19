@@ -92,11 +92,18 @@
                     <i class="bx bx-envelope"></i>
                 </div>
                 <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Phone" name="phone">
+                    <i class="bx bx-phone"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Address" name="address">
+                    <i class="bx bx-home"></i>
+                </div>
+                <div class="input-box">
                     <input type="password" class="input-field" placeholder="Password" name="password">
                     <i class="bx bx-lock-alt"></i>
                 </div>
                 <div class="input-box">
-                    
                     <input type="submit" class="submit" id="submit" value="Register">
                 </div>
                 <div class="two-col">

@@ -16,7 +16,7 @@
             <a href="#" >Skills</a>
             <a href="#" >Education</a>
             <a href="#" >Experience</a>
-            <a href="#" >Contact</a>
+            <a href="Login.php" >Log Out</a>
         </nav>
     </header>
 </body>
