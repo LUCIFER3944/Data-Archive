@@ -43,11 +43,17 @@
                 flex: 0 0 100%;
             }
         }
+        .leader{
+            height: 100vh;
+            margin-top: 170px;
+        }
     </style>
 </head>
 <body>
 
 <?php include("nav.php"); ?>
+<div class="leader">
+
 
 <div class="container profile-container">
     <div class="row justify-content-center">
@@ -102,6 +108,7 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 
 </body>
