@@ -4,7 +4,7 @@ include('server.php');
 $email=$_POST['email'];
 $password=$_POST['password'];
 print_r($password);
-$select="SELECT * FROM `userdetails` WHERE `email`='$email' ";
+$select="SELECT * FROM `users` WHERE `email`='$email' ";
 $result=mysqli_query($conn,$select);
 
 $row=mysqli_fetch_assoc($result);

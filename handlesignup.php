@@ -8,7 +8,7 @@ $email=$_POST['email'];
 $phone=$_POST['phone'];
 $address=$_POST['address'];
 $password=$_POST['password'];
-$sql="INSERT INTO `userdetails`( `fname`, `lname`, `email`,`phone`,`address`, `password`) VALUES ('$fname','$lname','$email',`$phone`,`$address`,'$password')";
+$sql="INSERT INTO `users`( `fname`, `lname`, `email`,`phone`,`address`, `password`) VALUES ('$fname','$lname','$email','$phone','$address','$password')";
 
 if(mysqli_query($conn,$sql)){
     header("location:Login.php");
