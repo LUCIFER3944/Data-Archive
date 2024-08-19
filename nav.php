@@ -1,3 +1,31 @@
+<?php
+$id="";
+$name="";
+
+
+      session_start();
+    if(isset($_SESSION['login'])&& $_SESSION['login']=='true' ){
+    $id=$_SESSION['id'];
+    include 'server.php';
+    $from="SELECT * FROM `users` WHERE `id`='$id'";
+
+   $result=mysqli_query($conn,$from);
+   $row=mysqli_fetch_assoc($result);
+$name=$row['fname'];
+
+
+
+
+
+
+
+
+
+    }else{
+
+      header('location:login.php');
+    }
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +36,9 @@
 </head>
 <body>
 <header>
-        <a href="#" class="logo">Lucifer</a>
+        <a href="#" class="logo"> <?php
+            echo $name;
+            ?></a>
 
         <nav>
             <a href="main.php" class="active"> Home</a>
@@ -16,7 +46,7 @@
             <a href="#" >Skills</a>
             <a href="#" >Education</a>
             <a href="#" >Experience</a>
-            <a href="Login.php" >Log Out</a>
+            <a href="Logout.php" >Log Out</a>
         </nav>
     </header>
 </body>

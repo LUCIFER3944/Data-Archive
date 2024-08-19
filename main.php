@@ -1,3 +1,31 @@
+<?php
+$id="";
+$name="";
+
+
+      session_start();
+    if(isset($_SESSION['login'])&& $_SESSION['login']=='true' ){
+    $id=$_SESSION['id'];
+    include 'server.php';
+    $from="SELECT * FROM `users` WHERE `id`='$id'";
+
+   $result=mysqli_query($conn,$from);
+   $row=mysqli_fetch_assoc($result);
+$name=$row['fname'];
+
+
+
+
+
+
+
+
+
+    }else{
+
+      header('location:login.php');
+    }
+    ?>
 <!DOCTYPE html>
 <html lang="en">
     
@@ -17,7 +45,9 @@
             <img src="images\profile 2.jpg" alt="">
         </div>
         <div class="home-content">
-            <h1>Hi, It's <span>Lucifer</span></h1>
+            <h1>Hi, It's <span> <?php
+            echo $name;
+            ?></span></h1>
             <h3 class="typing-text">I'm a <span></span></h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore dolores esse. Odit similique doloribus tenetur doloremque, sunt commodi in ipsa repudiandae debitis deleniti blanditiis quibusdam quaerat neque asperiores ea.</p>
             <div class="social-icons">
