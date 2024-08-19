@@ -22,7 +22,7 @@
             <div class="nav-menu" id="navMenu">
                 <ul>
                     <li><a href="main.php" class="link active">Home</a></li>
-                    <li><a href="#" class="link">Profile</a></li>
+                    <li><a href="profile.php" class="link">Profile</a></li>
                     <li><a href="#" class="link">Services</a></li>
                     <li><a href="#" class="link">About</a></li>
                 </ul>
