@@ -12,6 +12,7 @@ include("server.php");
 <style>
     table{
         margin-top: 150px;
+        font-size: 20px;
     }
 </style>
 <body>
@@ -23,6 +24,7 @@ include("server.php");
           <tr>
             <th scope="col">sno</th>
             <th scope="col">Name</th>
+            <th scope="col">Last Name</th>
             <th scope="col">Email</th>
             <th scope="col">Phone</th>
             <th scope="col">address</th>
@@ -36,6 +38,7 @@ include("server.php");
           echo '<tr>';
                 echo '<td>' . $row['id'] . '</td>';
                 echo '<td>' . $row['fname'] . '</td>';
+                echo '<td>' . $row['lname'] . '</td>';
                 echo '<td>' . $row['email'] . '</td>';
                 echo '<td>' . $row['phone'] . '</td>';
                 echo '<td>' . $row['address'] . '</td>';

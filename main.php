@@ -19,7 +19,7 @@
         </div>
         <div class="home-content">
             <h1>Hi, It's <span> <?php
-            echo $name;
+            echo $fname;
             ?></span></h1>
             <h3 class="typing-text">I'm a <span></span></h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus labore dolores esse. Odit similique doloribus tenetur doloremque, sunt commodi in ipsa repudiandae debitis deleniti blanditiis quibusdam quaerat neque asperiores ea.</p>

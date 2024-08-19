@@ -68,7 +68,7 @@
                 <div class="card-body text-center">
                     <img src="images/ava3.webp" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
                     <h5 class="my-4"> <?php
-            echo $name;
+            echo $fname;
             ?></h5>
                     <p class="text mb-1">Full Stack Developer</p>
                     <p class="text mb-4"> <?php
@@ -88,7 +88,7 @@
                         <div class="col-sm-3 info-label">Full Name</div>
                         <div class="col-sm-9">
                             <p class="text"> <?php
-            echo $name;
+            echo $fname;
             ?></p>
                         </div>
                     </div>

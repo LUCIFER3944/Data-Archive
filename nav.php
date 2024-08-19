@@ -12,7 +12,7 @@ include("sessionstart.php");
 <body>
 <header>
         <a href="#" class="logo"> <?php
-            echo $name;
+            echo $fname;
             ?></a>
 
         <nav>

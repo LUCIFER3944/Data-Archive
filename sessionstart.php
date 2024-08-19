@@ -11,8 +11,8 @@ $name="";
 
    $result=mysqli_query($conn,$from);
    $row=mysqli_fetch_assoc($result);
-$name=$row['fname'];
-$name=$row['fname'] ;         #." ".$row['lname'];
+$fname=$row['fname'];
+$lname=$row['lname'] ;         #." ".$row['lname'];
 $email=$row['email'];
 $phone=$row['phone'];
 $address=$row['address'];
