@@ -1,0 +1,32 @@
+body{
+    background-image: url(images/wallpaperflare.com_wallpaper\ \(11\).jpg);
+    height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+.leader{
+  
+
+}
+.form-control{
+    height: 50vh;
+    width:80vw;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 20px;
+}
+.textarea{
+    resize: none;
+}

@@ -18,7 +18,7 @@ include("sessionstart.php");
         <nav>
             <a href="main.php" class="active"> Home</a>
             <a href="profile.php" >Profile</a>
-            <a href="#" >Skills</a>
+            <a href="postBlog.php" >Post Blog</a>
             <a href="table.php" >Users Info</a>
             <a href="#" >Experience</a>
             <a href="Logout.php" >Log Out</a>
