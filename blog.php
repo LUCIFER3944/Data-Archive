@@ -1,13 +1,18 @@
 <?php
+include("nav.php")
+
+
+?>
+<?php
 $id="";
 $name="";
 
 
-      session_start();
+     
     if(isset($_SESSION['login'])&& $_SESSION['login']=='true' ){
-    $id=$_SESSION['id'];
+        $userid=$_SESSION['id'];
     include 'server.php';
-    $from="SELECT * FROM `users` WHERE `id`='$id'";
+    $from="SELECT * FROM `users` WHERE `id`='$userid'";
 
    $result=mysqli_query($conn,$from);
    $row=mysqli_fetch_assoc($result);
@@ -41,9 +46,7 @@ $blog=$row['blog'];
     <link rel="stylesheet" href="blogstyle.css">
 </head>
 <body>
-    <?php
-    include("nav.php");
-    ?>
+  
     <div class="container">
         <div class="sidebar">
             <h2>Menu</h2>
