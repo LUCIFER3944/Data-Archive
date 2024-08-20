@@ -1,3 +1,30 @@
+<?php
+include("nav.php")
+
+
+?>
+<?php
+if($_SERVER['REQUEST_METHOD']=='POST'){
+   
+    if(isset($_SESSION['login'])&& $_SESSION['login']=='true' ){
+    $userid=$_SESSION['id'];}
+    include('server.php');
+     
+    $title=$_POST['title'];
+    $blog=$_POST['blog'];
+    
+   
+        $sql="INSERT INTO `table`( `title`, `blog`, `userid`, `postedtime`) VALUES ('$title','$blog','$userid',CURRENT_TIMESTAMP())";
+        if(mysqli_query($conn,$sql)){
+            echo 'inserted';
+            // header("location:blog.php");
+        }
+    
+
+}
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,12 +34,9 @@
     <link rel="stylesheet" href="postblogstyle.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body>`
-
-</head>
 <body>
     <div class="leader">
-        <form action="insert.php"  method="post">
+        <form action="postBlog.php"  method="post">
            
             <div class="title">
               <label for="exampleInputPassword1" class="form-label">Title</label>
