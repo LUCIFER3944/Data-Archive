@@ -12,7 +12,7 @@ $name="";
     if(isset($_SESSION['login'])&& $_SESSION['login']=='true' ){
         $userid=$_SESSION['id'];
     include 'server.php';
-    $from="SELECT * FROM `users` WHERE `id`='$userid'";
+    $from="SELECT * FROM `table` WHERE `id`='$userid'";
 
    $result=mysqli_query($conn,$from);
    $row=mysqli_fetch_assoc($result);
