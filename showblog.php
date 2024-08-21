@@ -6,18 +6,24 @@ include("nav.php")
 <?php
 $id="";
 $name="";
+$postid=$_GET['postid'];
 
 
      
     if(isset($_SESSION['login'])&& $_SESSION['login']=='true' ){
         $userid=$_SESSION['id'];
     include 'server.php';
-    $from="SELECT * FROM `table` where `userid`='$userid' ";
+    $from="SELECT * FROM `table` WHERE `postid`='$postid'";
 
    $result=mysqli_query($conn,$from);
- 
-
-
+   $row=mysqli_fetch_assoc($result);
+$title=$row['title'];
+$blog=$row['blog'];
+$uid=$row['userid'];
+$sql="SELECT `fname`, `lname` FROM `users` WHERE `id`='$uid'";
+$cola=mysqli_query($conn,$sql);
+$name=mysqli_fetch_assoc($cola);
+$username=$name['fname'].' '.$name['lname'];
 
 
 
@@ -58,44 +64,33 @@ $name="";
         </div>
 
         <div class="main-content">
-            <div class="post-box">
-                <textarea placeholder="What's happening?"></textarea>
-                <button class="post-button">Post</button>
-            </div>
+       
 
             <div class="posts">
                 <!-- Example Post 1 -->
-                 <?php
-
-while( $row=mysqli_fetch_assoc($result)){ //facting all data
-    $title=$row['title'];
-    $blog=$row['blog'];
-    $userid=$row['userid'];
-   
-
-
-
-
-   echo '
                 <div class="post">
                     <div class="user-info">
                         <img class="Avatar" src="images/profile 2.jpg" alt="User Avatar">
                         <div class="user-details">
-                            <h3>
-                           '.$fname .'</h3>
-                            <p>'.$title.'</p>
+                            <h3><?php
+                           echo $username ?></h3>
+                            <p><?php echo $title?></p>
                         </div>
                     </div>
-                    <p class="post-content"> '.$blog.'</p>
-                </div>';
-         
-  }?>
-
-   
+                    <p class="post-content"><?php echo $blog?></p>
+                </div>
+               
             </div>
+            <form action="commenthandler.php" method="post">
+                <input type="hidden" value="<?php echo $postid  ?>" name="postid">      
+            <div class="post-box">
+                <textarea name="comment" placeholder="What's happening?"></textarea>
+                <button type="submit" class="post-button">Post</button>
+            </div> </form>
         </div>
+
         <div class="sidebar right">
-             <h2>Trending</h2>
+            <h2>Trending</h2>
             <ul>
                 <li>Trend 1</li>
                 <li>Trend 2</li>

@@ -17,7 +17,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
         $sql="INSERT INTO `table`( `title`, `blog`, `userid`, `postedtime`) VALUES ('$title','$blog','$userid',CURRENT_TIMESTAMP())";
         if(mysqli_query($conn,$sql)){
             echo 'inserted';
-            // header("location:blog.php");
+            header("location:blog.php");
         }
     
 

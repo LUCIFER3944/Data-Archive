@@ -20,7 +20,8 @@ include("sessionstart.php");
             <a href="profile.php" >Profile</a>
             <a href="postBlog.php" >Post Blog</a>
             <a href="table.php" >Users Info</a>
-            <a href="blog.php" >Blog</a>
+            <a href="blog.php" >My Blog</a>
+            <a href="allblog.php" >Blog</a>
             <a href="Logout.php" >Log Out</a>
         </nav>
     </header>
