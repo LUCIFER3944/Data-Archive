@@ -1,0 +1,123 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    background-color: black !important;
+}
+
+/* Overall Page Container */
+.container {
+    margin-top: 100px;
+    display: flex;
+    min-height: 100vh;
+    background-color: #1a1a1a;
+    color: #eaeaea;
+}
+
+/* Sidebar (Left and Right) */
+.sidebar {
+    width: 20%;
+    background-color: #2a2a2a;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.sidebar ul li:hover {
+    color: #1da1f2;
+}
+
+/* Main Content Area */
+.main-content {
+    width: 60%;
+    padding: 20px;
+    background-color: #1a1a1a;
+    overflow-y: auto;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Individual Post Styles */
+.post {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.Avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.user-details h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #1da1f2;
+}
+
+.user-details p {
+    font-size: 14px;
+    color: #b3b3b3;
+}
+
+.post-content {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Right Sidebar */
+.sidebar.right {
+    width: 20%;
+    background-color: #2a2a2a;
+    padding: 20px;
+}
+
+.sidebar.right h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar.right ul {
+    list-style: none;
+}
+
+.sidebar.right ul li {
+    padding: 10px 0;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.sidebar.right ul li:hover {
+    color: #1da1f2;
+}

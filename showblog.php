@@ -48,7 +48,7 @@ $username=$name['fname'].' '.$name['lname'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twitter-Like Post Page</title>
-    <link rel="stylesheet" href="blogstyle.css">
+    <link rel="stylesheet" href="showblogstyle.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
@@ -102,7 +102,7 @@ $username=$name['fname'].' '.$name['lname'];
                     $fold=mysqli_query($conn,$sql);
                     $fetch=mysqli_fetch_assoc($fold);
                     $username=$fetch['fname'].' '.$fetch['lname'];
-            echo '   <div class="border">   <div class="post">
+            echo '   <div class="border1">   <div class="post">
                     <div class="user-info">
                         <img class="Avatar" src="images/profile 2.jpg" alt="User Avatar">
                         <div class="user-details">
@@ -115,17 +115,16 @@ $username=$name['fname'].' '.$name['lname'];
                 </div>
 
                 <p class="d-inline-flex gap-1">
-                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  Link with href
-                </a>
+               
                 <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                  Button with data-bs-target
+                 Reply
                 </button>
               </p>
               <div class="collapse" id="collapseExample">
-                <div class="card card-body">
-                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                </div>
+                   <div class="post-box">
+                <textarea name="comment" placeholder="Reply?"></textarea>
+                <button type="submit" class="post-button">Post</button>
+            </div>
               </div>
 </div>';
 
@@ -151,18 +150,7 @@ $username=$name['fname'].' '.$name['lname'];
             </ul>
         </div>
     </div>
-    <p class="d-inline-flex gap-1">
-  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Link with href
-  </a>
-  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-    Button with data-bs-target
-  </button>
-</p>
-<div class="collapse" id="collapseExample">
-  <div class="card card-body">
-    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-  </div>
+  
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
