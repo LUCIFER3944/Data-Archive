@@ -60,11 +60,6 @@ $name="";
 
         <div class="main-content">
           
-                <div class="post-box">
-
-                <textarea placeholder="What's happening?"></textarea>
-                <button class="post-button">Post</button>
-            </div>
         
             <div class="posts">
                 <!-- Example Post 1 -->
