@@ -43,6 +43,7 @@ $name="";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twitter-Like Post Page</title>
     <link rel="stylesheet" href="blogstyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
   
@@ -58,10 +59,7 @@ $name="";
         </div>
 
         <div class="main-content">
-            <div class="post-box">
-                <textarea placeholder="What's happening?"></textarea>
-                <button class="post-button">Post</button>
-            </div>
+         
 
             <div class="posts">
                 <!-- Example Post 1 -->

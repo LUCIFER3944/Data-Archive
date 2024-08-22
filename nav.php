@@ -9,14 +9,17 @@ include("sessionstart.php");
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<style>
+ 
+</style>
 <body>
 <header>
         <a href="#" class="logo"> <?php
             echo $fname;
             ?></a>
 
-        <nav>
-            <a href="main.php" class="active"> Home</a>
+        <nav >
+            <a  href="main.php" class="active"> Home</a>
             <a href="profile.php" >Profile</a>
             <a href="postBlog.php" >Post Blog</a>
             <a href="table.php" >Users Info</a>
