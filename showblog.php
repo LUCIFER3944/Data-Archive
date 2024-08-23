@@ -122,8 +122,14 @@ $username=$name['fname'].' '.$name['lname'];
               </p>
               <div class="collapse" id="collapseExample">
                    <div class="post-box">
+                   
 
                  <form action="replyhandler.php" method="post">
+                        
+        
+          <input type="hidden" name="postid" id="hiddenField" value="'.$postid.';" >
+ 
+          <input type="hidden"  name="commentid" value="'.$commid.';>
 
                    <textarea name="reply" placeholder="reply">
               
@@ -139,8 +145,7 @@ $username=$name['fname'].' '.$name['lname'];
                  
                  ?>
               
-             
-          
+      
           
                
             </div>
