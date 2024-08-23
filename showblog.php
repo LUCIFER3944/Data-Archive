@@ -124,17 +124,12 @@ $username=$name['fname'].' '.$name['lname'];
                    <div class="post-box">
                    
 
-                 <form action="replyhandler.php" method="post">
-                        
-        
-          <input type="hidden" name="postid" id="hiddenField" value="'.$postid.';" >
- 
-          <input type="hidden"  name="commentid" value="'.$commid.';>
-
-                   <textarea name="reply" placeholder="reply">
-              
-                </textarea>
-                <button type="submit" class="post-button">Post</button></form>
+              <form action="replyhandler.php" method="post">
+                                        <textarea name="reply" placeholder="Reply"></textarea>
+                                        <input type="hidden" name="commentid" value="' . $row['commid'] . '">
+                                        <input type="hidden" name="postid" value="' . $postid . '">
+                                        <button type="submit" class="post-button">Post</button>
+                                    </form>
             </div>
               </div>
 </div>';
