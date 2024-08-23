@@ -17,7 +17,7 @@ $commid = $_POST['commentid'];
 $postid = $_POST['postid'];
 $reply = $_POST['reply'];
 
-$sql="INSERT INTO `reply`( `commid`, `id`, `userid`, `reply`,`time`) VALUES ('$commid','$id','$userid','$time',CURRENT_TIMESTAMP())";
+$sql="INSERT INTO `reply`( `commid`,  `userid`, `reply`,`time`) VALUES ('$commid','$userid','$time',CURRENT_TIMESTAMP())";
 
 
 if(mysqli_query($conn,$sql)){
