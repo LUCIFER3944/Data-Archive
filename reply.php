@@ -150,7 +150,7 @@ if (isset($_SESSION['login']) && $_SESSION['login'] == 'true') {
                             $reply_username = $reply_user_data['fname'] . ' ' . $reply_user_data['lname'];
                             
                             echo '
-                            <div class="reply">
+                            <div class="post">
                                 <div class="user-info">
                                     <img class="Avatar" src="images/profile 2.jpg" alt="User Avatar">
                                     <div class="user-details">
