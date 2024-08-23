@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 22, 2024 at 07:44 AM
+-- Generation Time: Aug 23, 2024 at 03:04 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -34,15 +34,6 @@ CREATE TABLE `comment` (
   `userid` int(11) NOT NULL,
   `commtime` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `comment`
---
-
-INSERT INTO `comment` (`commid`, `commdata`, `postid`, `userid`, `commtime`) VALUES
-(1, 'Hello john', 10, 1, '2024-08-22 10:28:20'),
-(2, 'i am vivek rai ', 10, 2, '2024-08-22 10:29:16'),
-(3, 'hello', 10, 2, '2024-08-22 10:33:47');
 
 -- --------------------------------------------------------
 
@@ -154,7 +145,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `comment`
 --
 ALTER TABLE `comment`
-  MODIFY `commid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `commid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `reply`
