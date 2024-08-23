@@ -21,7 +21,7 @@ $sql="INSERT INTO `reply`( `commid`,  `userid`, `reply`,`time`) VALUES ('$commid
 
 
 if(mysqli_query($conn,$sql)){
-    header("location:showblog.php?postid=$postid");
+    header("location:reply.php?postid=$postid");
 }
 
 

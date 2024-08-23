@@ -117,18 +117,18 @@ $username=$name['fname'].' '.$name['lname'];
                 <p class="d-inline-flex gap-1">
                
                 <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                 reply
+                 more
                 </button>
               </p>
               <div class="collapse" id="collapseExample">
                    <div class="post-box">
-
+                   
                  <form action="replyhandler.php" method="post">
 
-                   <textarea name="reply" placeholder="reply">
+                   <textarea name="comment" placeholder="reply">
               
-                </textarea>
-                <button type="submit" class="post-button">Post</button></form>
+                </textarea></form>
+                <button type="submit" class="post-button">Post</button>
             </div>
               </div>
 </div>';
