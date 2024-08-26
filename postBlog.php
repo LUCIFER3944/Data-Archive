@@ -35,23 +35,25 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <div class="leader">
-        <form action="postBlog.php"  method="post">
-           
-            <div class="title">
-              <label for="exampleInputPassword1" class="form-label">Title</label>
-              <input type="text" class="form" name="title" id="exampleInputPassword1">
+    <div class="container mt-5">
+        <div class="card shadow-lg">
+            <div class="card-body">
+                <h2 class="card-title text-center mb-4">Create a New Blog Post</h2>
+                <form action="postBlog.php" method="post">
+                    <div class="mb-3">
+                        <label for="title" class="form-label">Title</label>
+                        <input type="text" class="form-control" name="title" id="title" placeholder="Enter your blog title" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="blog" class="form-label">Post Blog</label>
+                        <textarea class="form-control" name="blog" id="blog" rows="8" placeholder="Write your blog here..." required></textarea>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                    </div>
+                </form>
             </div>
-            <div class="title">
-              <label for="exampleInputPassword1" class="form-label">Post Blog</label>
-              <textarea class="form-control textarea" name="blog" id="exampleInputPassword1"></textarea>
-            </div>
-            <div class="mb-3 form-check">
-         
-            
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+        </div>
     </div>
 </body>
 </html>
