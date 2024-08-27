@@ -13,18 +13,16 @@ if (isset($_SESSION['login']) && $_SESSION['login'] == 'true') {
         $commid = $_POST['commentid'];
         $postid = $_POST['postid'];
         $reply = $_POST['reply'];
+       
 
         $sql = "INSERT INTO `reply`(`commid`, `userid`, `reply`, `time`) 
                 VALUES ('$commid', '$userid', '$reply', CURRENT_TIMESTAMP())";
 
         if (mysqli_query($conn, $sql)) {
           
-            header("Location: reply.php?postid=$postid");
-            exit();
-        } else {
-          
-            echo "Error: " . mysqli_error($conn);
-        }
+            header("Location:reply.php?postid=$postid");
+           
+        } 
     }
 }
 ?>
